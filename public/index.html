@@ -9,9 +9,27 @@
         .menu-item:hover {
             background-color: #FEF3C7;
         }
+        .closing-notice {
+            animation: pulse 2s infinite;
+        }
+        @keyframes pulse {
+            0% { background-color: #FEF2F2; }
+            50% { background-color: #FEE2E2; }
+            100% { background-color: #FEF2F2; }
+        }
     </style>
 </head>
 <body class="bg-yellow-50">
+    <!-- Easter Closing Notice -->
+    <div class="closing-notice bg-red-100 border-l-4 border-red-500 p-4 mb-0 w-full text-center">
+        <div class="flex flex-col items-center justify-center">
+            <p class="text-2xl font-bold text-red-700 mb-2">EASTER HOLIDAY NOTICE</p>
+            <p class="text-xl font-medium text-red-700">CJ's will be CLOSED from 13th April</p>
+            <p class="text-xl font-medium text-green-600">Re-OPEN on the 19th April (Saturday)</p>
+            <p class="text-2xl font-bold text-red-700 mt-2">HAPPY EASTER!!!</p>
+        </div>
+    </div>
+
     <!-- Header -->
     <header class="relative h-96 bg-yellow-900 overflow-hidden">
         <img src="burger.jpeg" alt="Pizza background" class="object-cover w-full h-full opacity-50"/>
@@ -268,3 +286,25 @@
                         </div>
                     </div>
                 </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- Footer with Easter Notice Reminder -->
+    <footer class="bg-yellow-800 text-white py-8 px-4 mt-16">
+        <div class="max-w-6xl mx-auto text-center">
+            <p class="text-xl font-bold mb-4">CJ Chicken Pizza - York's Friendliest Takeaway</p>
+            <p class="mb-4">📞 01904 848585</p>
+            
+            <!-- Easter Notice Reminder -->
+            <div class="bg-red-700 p-4 rounded-lg mb-4 inline-block">
+                <p class="text-xl font-bold">REMINDER: We will be CLOSED for Easter</p>
+                <p>From 13th April - Reopening Saturday 19th April</p>
+                <p class="text-xl font-bold mt-2">HAPPY EASTER!</p>
+            </div>
+            
+            <p class="text-sm mt-8">&copy; 2025 CJ Chicken Pizza. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
